@@ -13,7 +13,7 @@
    -  `docker exec -it mongodb mongosh`
    -  Run `use img_database` and `db.img_collection.find().pretty()`
    -  This should list all records of img.csv data.
-- Run `python3 app.py` to run flask application.
+- Run `python3 app.py` to run flask application. It also deletes existing results and creates 'img_results' directory.
 - Open a new terminal and run below curl to view the frames between the given depths.
     ```
     curl "http://localhost:5000/get_frames_between_depth?min_depth=9000&max_depth=9001"`
